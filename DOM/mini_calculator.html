@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calc</title>
+    <style>
+         body{
+            background-color: aliceblue;
+        }
+       #Calculator{
+        background-color: black;
+       
+        width:30%;
+      
+        margin-left: 32%;
+        align-content: center;
+        margin: auto;
+        padding: 6%;
+        border-radius: 30px;
+       }
+       h1{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+       }
+       input{
+       padding: 20px;
+      width: 160px;
+     align-items: center;
+     text-align: center;
+       }
+       button{
+       padding: 10px;
+        width: 75px;
+        margin: 10px;
+        border-radius: 20px;
+       }
+       
+    </style>
+</head>
+
+<body>    
+    <div id="Calculator">
+        <h1>Mini Calculator</h1>
+    <input type="text" placeholder="Enter 1st Number" id="first" value="">
+    <input type="text" placeholder="Enter 2nd Number"id="second" value="">
+    <br>
+    
+<button onclick="add()">Add</button>
+<button onclick="subtract()">Subtract</button>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+
+</div>
+
+</body>
+<script>
+    
+    
+    function add(){
+        var num1=document.querySelector("#first").value        
+        var num2=document.querySelector("#second").value    
+        var sum=parseFloat(num1) + parseFloat(num2)
+        alert("Ans = "+sum)
+    }
+    function subtract(){
+        var num1=document.querySelector("#first").value         
+        var num2=document.querySelector("#second").value         
+        var sub=parseFloat(num1) - parseFloat(num2)   
+        alert("Ans = "+sub)
+
+    }
+    function multiply(){
+        var num1=document.querySelector("#first").value         
+        var num2=document.querySelector("#second").value      
+        var mul=parseFloat(num1) * parseFloat(num2)   
+        alert("Ans = "+mul)
+
+    }
+    function divide(){
+        var num1=document.querySelector("#first").value         
+        var num2=document.querySelector("#second").value       
+        var div=parseFloat(num1) / parseFloat(num2)   
+        alert("Ans = "+div)
+
+    }
+
+</script>
+</html>

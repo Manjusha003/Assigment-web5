@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence</title>
+    <style>
+        /* body{
+            background-color: aliceblue;
+        } */
+       div{
+        background-color: black;
+       border-radius: 10px;
+        /* height:100px; */
+        width:20%;
+        margin-top: 12%;
+        margin-left: 32%;
+        align-content: center;
+        padding: 5%;
+       }
+       h1{
+        color: white;
+        font-size: 40px;
+       }
+       input,button{
+        width: 40%;
+        padding: 8px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Age Checker</h1>
+    <input type="text" placeholder="Enter your age" >
+    <button onclick="valid()">Submit</button>
+    <p></p>
+</div>
+</body>
+<script>
+    function valid(){
+        var age=document.querySelector("input").value;
+        var query=document.querySelector("p")
+
+        if( age>18){
+            query.innerText="You can drive in India!"
+            
+        }
+        if(age<18){
+            query.innerText="You can't drive in India!"
+            
+        }
+        if( age==18){
+            query.innerText="You are just old enough to drive in India!"
+            
+        }
+       
+
+    }
+</script>
+
+</html>
